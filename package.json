@@ -1,9 +1,9 @@
 {
-  "name": "restaurant",
+  "name": "restaurantnode",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --watchAll",
     "start": "nodemon index.js"
   },
   "keywords": [],
@@ -11,10 +11,17 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@types/jest": "^29.5.13",
     "@types/node": "^22.7.4",
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
+    "jest": "^29.7.0",
+    "mock": "^0.1.1",
     "mongoose": "^8.7.0",
     "nodemon": "^3.1.7"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "node-mocks-http": "^1.16.1"
   }
 }
