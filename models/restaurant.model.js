@@ -19,6 +19,11 @@ const restaurantSchema = new mongoose.Schema({
     name: {
         required: true,
         type: String
+    },
+    restaurant_id: {
+        required: true,
+        type: String
     }
+
 });
 module.exports = mongoose.model('Restaurant', restaurantSchema);
